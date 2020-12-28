@@ -1,0 +1,44 @@
+*{
+	margin:0;
+	padding:0%;
+}
+
+.navbar-nav li a{
+	color:black;
+	font-weight:600;
+}
+.logo{
+	height:30px;
+	width:30px;
+}
+
+.logo-img{
+	height: 80px;
+	width: 80px;
+
+}
+hr{
+	    color:green;
+		background:cyan;
+	  }
+
+.Gallery{
+    margin: 10px 50px;
+}
+
+.Gallery img{
+	height: 250px;
+    width: 300px;
+    padding: 10px;
+	filter: grayscale(50%);
+	border-bottom: 4px solid black;
+	border-top: 10px solid greenyellow;
+	border-radius: 45px;
+}
+
+.Gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}

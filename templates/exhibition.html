@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		{% extends "base.html"%}
+{% block title %}About {% endblock %}
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/style.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/head.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/lightbox.min.css')}}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Exhibition</title>
+		<style>
+	/* Make the image fully responsive */
+	.carousel-inner img {
+	width:100%;
+	}
+</style>
+</head>
+
+ <body class="container-fluid">
+ {% block content %}
+<div class="row">
+		<div class="col-md-12">
+		<img src="{{url_for('static',filename='images/exhibition/e6.jpg')}}" alt="e6" width="100%" height="400">
+		</div>
+	</div>
+
+
+		<div class="container">
+		<div class="row">
+<p class="col-md-8" style="padding-left:50px;padding-top:50px;">
+			<b>We breathe events!</b>and for creating the event memorable, we are with you… to provide you with the best outcomes. We try to design and plan the event according to the needs and dreams of the bride and groom and bring their imagination into reality. With us.We assure you to plan and execute a flawless fun wedding occasion with enthusiasm,creativity,and commitment.
+
+			</p>
+			<div class="col-md-4">
+				<img src="{{url_for('static',filename='images/exhibition/e2.jpg')}}" alt="e2" width="300" height="200" style="padding-top:50px;">
+			</div>		
+						
+			
+		</div>
+		
+		<div class="row">
+					
+			<p class="col-md-8" style="padding-left:50px;padding-top:50px;">
+				<b>Know</b> the various in- build <b>facilities that we provide you.</b> We have our very own Fabricators, Stylist, Props, Decorators, Audio and Sound engineers, LED and Lights<b>The wedding decor’</b> Wedding décor is our main forte; take you to the new level from the readymade and very old tradition to the new customized events. We believe in providing unique client stories. We always try and focus on the wow factor in our work.
+
+			</p>
+			
+			<div class="col-md-4">
+				<img src="{{url_for('static',filename='images/exhibition/e3.jpg')}}" alt="e3"width="300" height="200" style="padding-top:50px;">
+			</div>
+		</div>		
+			
+			
+			<div class="row">
+			<p class="col-md-8" style="padding-left:50px;padding-top:50px;">
+			<b>Production & Fabrication</b> We have a dedicated team of set designers, visualizers, artists, and craftsmen. The set design for the Reception or Mehendi ki raat, wedding day, DJ night or bachelor’s party our team shall make sure that your ideas and theme comes alive.
+
+			</p>
+<div class="col-md-4">
+				<img src="{{url_for('static',filename='images/exhibition/e4.jpg')}}" alt="Los Angeles" width="300" height="200" style="padding-top:50px;">
+			</div>		
+			
+			
+		</div>
+		
+		<div class="row">
+					
+			<p class="col-md-8" style="padding-left:50px;padding-top:50px;">
+				<b>Destination weddings</b> Keep up with the current trend and host an event for your guests with sheer grace and expertise. Let us know your budget and desired destination and we will explore the possibilities for you!
+
+
+			</p>
+			
+			<div class="col-md-4" style="padding-bottom:30px;">
+				<img src="{{url_for('static',filename='images/exhibition/e5.jpg')}}" alt="Los Angeles" width="300" height="200" style="padding-top:50px;">
+			</div>
+		</div>
+		
+		
+		
+	</div>	
+{% endblock %}
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+
+
+

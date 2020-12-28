@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/style.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/head.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/lightbox.min.css')}}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>{% block title %} {% endblock %}</title>
+		<style>
+		
+	.carousel-inner img {
+	width:100%;
+	}
+</style>
+</head>
+ <body class="container-fluid">
+ <header class="header">
+    <div class="row">
+	  <div class="col-md-3">
+	  <img src="{{url_for('static',filename='Images/logo.png')}}" height="80px" width="80px">
+	  </div>
+	 <div class="col-md-6" style="color:black;font-size:40px;font-family:Comic Sans MS">
+	    <span style="text-shadow: 2px 2px gray;">Event Management Company
+	  </div>
+	 <div class="col-md-3">
+	   <a href="https://www.facebook.com"> <i class="fab fa-facebook-square" style="font-size:30px;color:blue;"></i></a>
+		<a href="https://www.instagram.com"><i class="fab fa-instagram" style="font-size:30px;color:red;"></i></a>
+		<a href="https://www.twitter.com"><i class="fab fa-twitter-square"style="font-size:30px;color:cyan;"></i></a>
+		<span class="text-bolder"style="font-family:Times New Roman;color:black;">
+		9568643897/&nbsp;7786542342</span>
+	 </div>
+</div><!--First Row Ends-->
+<div class="row">
+    <div class="col-md-12">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <a class="navbar-brand" href="{{url_for('index')}}"><img  class="logo"src="{{url_for('static',filename='Images/logo.png')}}"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link font-weight-bold" href="{{url_for('index')}}">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="{{url_for('about')}}">ABOUT US</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SERVICES
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{url_for('birthday')}}">BirthDays</a>
+          <a class="dropdown-item" href="{{url_for('wedding')}}">Wedding</a>
+          <a class="dropdown-item" href="{{url_for('exhibition')}}">Exhibition</a>
+		  <a class="dropdown-item" href="{{url_for('award')}}">Award Ceremony</a>
+          <a class="dropdown-item" href="{{url_for('rock')}}">Rock Consert </a>
+          <a class="dropdown-item" href="{{url_for('reception')}}">Reception Party </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="{{url_for('contact')}}" tabindex="-1">CONTACT</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="{{url_for('gallery')}}" tabindex="-1">GALLERY</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="{{url_for('login')}}" tabindex="-1">LOGIN</a>
+      </li>
+    </ul>
+      </div>
+</nav>
+</div>
+</div><!--Second Row Ends-->
+</header><!--End Of header-->
+
+{% block content %}
+	  {% endblock %}
+
+<footer class="footer container-fluid"><!--start of footer-->
+<div class="row">
+		<div class="col-md-3">
+		<img src="{{url_for('static',filename='Images/logo.png')}}" height="80px" width="80px">
+		</div>
+		<div class="col-md-3">
+		<i  class="fas fa-map-marker-alt iconf"></i>
+	    <address style="color:white;">Near Deshpande Hospital,<br>Ring Road,Baramati,413133.Pune,
+		Maharashtra.</address> 
+		</div>
+		<div class="col-md-3">
+		
+		<i class="far fa-envelope iconf"></i>	
+		<br><span style="color:white;">eventmanagementcompany@gmail.com</span>
+		</div>
+		<div class="col-md-3">
+		<br>
+		<i  class="fas fa-phone iconf"></i><br>
+		<br><span style="color:white;">02112-454545</span>
+		</div>
+</div>
+	<div class="row">
+		<div class="col-md-12" style="background:black;color:white;">
+		<p class="text-center">All Rights Reserved CopyRigh &copy 2020</p>
+		</div>
+	</div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

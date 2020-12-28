@@ -1,0 +1,35 @@
+.header{
+ background:#cccc00;
+}
+.footer{
+	background:#999966;
+}
+.bag{
+	background:gray;
+}
+.background{
+	background:#ffff99;
+}
+
+.img{
+	border:10px solid transparent;
+	outline:4px solid;
+}
+.font{
+	font-family:Comic Sans MS;
+	color:black;
+	font-size:36px;
+	font-weight:800;
+}
+.icon{
+	font-size:100px;
+}
+.img:hover{
+	filter:grayscale(100%);
+	transform: scale(1.2);
+	transition:1s;
+
+}
+.iconf{
+	font-size:20px;
+}

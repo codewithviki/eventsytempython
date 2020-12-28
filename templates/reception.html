@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+	{% extends "base.html"%}
+{% block title %}Gallery{% endblock %}
+		<style>
+	/* Make the image fully responsive */
+	.carousel-inner img {
+	width:100%;
+	}
+</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/style.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/head.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/lightbox.min.css')}}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+ <body class="container-fluid">
+ {% block content %}			
+		<body class="body">
+<div class="row">
+	 <div class="col-md-12">
+	   <img src="{{url_for('static',filename='images/wed3.jpg')}}" alt="wed3" width="100%" height="300">
+	 </div>
+	 </div>
+	  
+	  <div class="container-fluid" >
+	  <div class="row">
+	    <div class="col-md-4" style="padding:50px;">
+		 	   <img src="{{url_for('static',filename='images/r1.jpg')}}" alt="r1" width="300" height="200">
+         </div>
+	     <div class="col-md-8" style=" padding-left:100px;padding-top:50px;">
+		 <b>With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their <u>reasonable rate and timely finished.</u> Our offered services are handled by industry known experts who have years of acquaintance.
+	     </b></div>
+		 
+		 
+	     <div class="col-md-8" style=" padding-top:50px;">
+		 <b><h6>Being</h6> a trustworthy entity of the market, we are engrossed in presenting Live Band Show service. Under the support of knowledgeable professionals, our offered services are rendered in conformity with customers provisions. In order to provide best service to the clients, <u>we trained our professionals in best possible manner.</u>
+	     </b></div>
+		 
+		 <div class="col-md-4" style="padding:50px; padding-right:30px">
+		 	   <img src="{{url_for('static',filename='images/r2.jpg')}}" alt="r2" width="300" height="200">
+         </div>
+		 
+		 
+		 
+		 
+		 <div class="col-md-4" style="padding:50px;">
+		 	   <img src="{{url_for('static',filename='images/r3.jpg')}}" alt="r3" width="300" height="200">
+         </div>
+	     <div class="col-md-8" style="padding-left:100px; padding-top:50px;">
+		 <b>With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their reasonable rate and timely finished. Our offered services are handled by industry known experts who have years of acquaintance.
+	     </b></div>
+		 
+		 
+		 
+		
+	     <div class="col-md-8" style="padding-left:100px; padding-top:50px;">
+		 <b>With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their reasonable rate and timely finished. Our offered services are handled by industry known experts who have years of acquaintance.
+	     </b></div>
+		  <div class="col-md-4" style="padding:50px; padding-right:30px">
+		 	   <img src="{{url_for('static',filename='images/r4.jpg')}}" alt="r4" width="300" height="200">
+         </div>
+		 
+		 
+		 
+		 
+		 <div class="col-md-4" style="padding:50px;">
+		 	   <img src="{{url_for('static',filename='images/r5.jpg')}}" alt="r5" width="300" height="200">
+         </div>
+	     <div class="col-md-8" style="padding-left:100px; padding-top:50px;">
+		<b> With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their reasonable rate and timely finished. Our offered services are handled by industry known experts who have years of acquaintance.
+	    </b> </div>
+		
+		</div>
+		</div>
+
+
+{% endblock %}
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

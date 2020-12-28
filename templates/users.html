@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% extends "base.html" %}
+    {%block title %}User's Page {% endblock %}
+</head>
+<body>
+    {%block content %}
+    <div class="container"> 
+        <h1 class="text-center text-success" style="font-family:Comic Sans MS;margin:50px;">Our Customers to Organize Event Management </h1> <br><br> 
+      <div class="row">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">cid</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name </th>
+                        <th scope="col">Email ID </th>
+                        <th scope="col"> Phone</th>
+                        <th scope="col"> Date  </th>
+                        <th scope="col"> Edit  </th>
+                        <th scope="col"> Delete </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for users in contactus %} 
+                      <tr>
+                        <th scope="row">{{users.c_id}}</th>
+                        <td>{{users.first_name}}</td>
+                        <td>{{users.last_name}}</td>
+                        <td>{{users.email_id}}</td>
+                        <td>{{users.phone_no}}</td>
+                        <td>{{users.event_date}}</td>
+                        <td><a href="update/{{users.c_id}}">update</a></td>
+                        <td><form action="delete" method="POST"><input type="hidden" name="c_id"value="{{users.c_id}}"/><input type="submit" value="delete"></form></td>
+                      </tr>
+                      {% endfor %}
+                     </tbody>
+                  </table><br><br><br>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

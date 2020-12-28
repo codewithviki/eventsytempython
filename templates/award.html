@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/style.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/head.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/lightbox.min.css')}}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Award</title>
+		<style>
+	/* Make the image fully responsive */
+	.carousel-inner img {
+	width:100%;
+	}
+</style>
+</head>
+	{% extends "base.html"%}
+{% block title %}Award {% endblock %}
+
+ <body class="container-fluid">
+{% block content %}
+<div class="row text-center">
+	 <div class="col-12 col-md-12">
+	   <img src="{{url_for('static',filename='Images/rock.jpg')}}" alt="rock" width="100%" height="400">
+	 </div>
+</div>
+
+	<div class="row text-center">
+	    <div class="col-md-6" style="padding-left:50px; padding-top:50px;" >
+		 <h6>With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their <b>reasonable rate and timely finished.</b> Our offered services are handled by industry known experts who have years of acquaintance.
+	    </h6> </div> 
+		 <div class="col-md-6" style="padding-right:30px; padding-top:50px;">
+		 	   <img src="{{url_for('static',filename='Images/rock1.jpg')}}" alt="rock1" width="300" height="200">
+		 </div>
+	</div>
+	<hr/>
+	<div class="row text-center">
+	    <div class="col-md-6" style="padding-left:50px; padding-top:50px;">
+		<h6>Beinga trustworthy entity of the market, we are engrossed in presenting Live Band Show service. Under the support of knowledgeable professionals, our offered services are rendered in conformity with customers provisions. In order to provide best service to the clients, <b>we trained our professionals in best possible manner.</b>
+	    </h6> 
+		</div>
+		 <div class="col-md-6" style="padding-right:30px; padding-top:50px;">
+		 	   <img src="{{url_for('static',filename='Images/rock2.jpg')}}" alt="rock2" width="300" height="200">
+         </div>
+	</div>
+	<hr/>
+	<div class="row text-center">
+	     <div class="col-md-6" style="padding-left:50px; padding-top:50px;">
+		 <h6>With the <b>help of knowledgeable experts</b>, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their reasonable rate and timely finished. Our offered services are handled by industry known experts who have years of acquaintance.
+	     </h6>
+		 </div>
+		  
+		 <div class="col-md-6" style="padding-right:30px; padding-top:50px;">
+		 	   <img src="{{url_for('static',filename='Images/rock3.jpg')}}" alt="rock3" width="300" height="200">
+		 </div>
+	</div>
+	<hr/>
+	<div class="row text-center">
+	     <div class="col-md-6" style="padding-left:50px; padding-top:50px;">
+		<h6> With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their reasonable rate and timely finished. Our offered services are handled by industry known experts who have years of acquaintance.</h6>
+		 </div>
+		 <div class="col-md-6" style="padding-right:30px; padding-top:50px;">
+		 	   <img src="{{url_for('static',filename='Images/rock4.jpg')}}" alt="rock4" width="300" height="200">
+         </div>
+	</div>
+	<hr/>
+	<div class="row text-center">	 	 
+	     <div class="col-md-6" style="padding-left:30px; padding-top:50px;">
+		<h6> With the help of knowledgeable experts, we are occupied in providing Music Shows Organiser. This service is extremely well-liked among our customers for their reasonable rate and timely finished. Our offered services are handled by industry known experts who have years of acquaintance.
+	    </h6> 
+		</div>
+		<div class="col-md-6" style="padding-right:30px; padding-top:50px; padding-bottom:5px;">
+		 	   <img src="{{url_for('static',filename='Images/rock5.jpg')}}" alt="rock5" width="300" height="200">
+         </div>
+		
+	</div>
+{% endblock %}
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+

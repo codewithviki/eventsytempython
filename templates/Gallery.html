@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		{% extends "base.html"%}
+{% block title %}Gallery{% endblock %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/style.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/head.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='Custom CSS/lightbox.min.css')}}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="background container-fluid">
+{% block content %}
+  <div class="container">
+       <h1 class="my-4 text-center text-lg-left">Event Gallery</h1>
+       <div class="row text-center text-lg-left">
+           <div class="col-lg-3 col-md-4 col-xs-6">
+               <a href="#" class="d-block mb-4 h-100">
+                   <img src="{{url_for('static',filename='Images/b2.jpg')}}" alt="" class="img-fluid img-thumbnail">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/b3.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/event1.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/event2.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/rock.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/b4.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/b7.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/gallery8.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/gallery9.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/gallery10.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/gallery11.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img src="{{url_for('static',filename='Images/b1.jpg')}}" alt="" class="img-fluid img-thumbnail">
+            </a>
+        </div>
+       </div>
+   </div> 
+    <nav aria-label="Page navigation example"style="padding-left:40%;">
+      <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="{{url_for('gallery')}}">1</a></li>
+        <li class="page-item"><a class="page-link" href="{{url_for('gallery2')}}">2</a></li>
+        <li class="page-item"><a class="page-link" href="{{url_for('gallery2')}}">Next</a></li>
+      </ul>
+    </nav>
+{% endblock %}
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="{{url_for('static',filename='js/lightbox-plus-jquery.min.js')}}"></script>
+</html>
